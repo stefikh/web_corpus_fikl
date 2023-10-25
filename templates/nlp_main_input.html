@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="cover.css" rel="stylesheet">
+
+    <style>
+      .scroll {
+        height: 200px;
+        overflow-y: scroll;
+      }
+
+      * {box-sizing: border-box;}
+      form {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+      }
+      input {
+        width: 100%;
+        height: 42px;
+        padding-left: 10px;
+        border: 2px solid #0DC0FF;
+        border-radius: 5px;
+        outline: none;
+        background: #E8F9FF;
+        color: #9E9C9C;
+      }
+      submit {
+        width: 100%;
+        height: 42px;
+        padding-left: 10px;
+        border: 2px solid #0DC0FF;
+        border-radius: 5px;
+        outline: none;
+        background: #E8F9FF;
+        color: #9E9C9C;
+      }
+
+      .container-info {
+        border: 2px solid lightgrey;
+        border-radius: 5px;
+        height: 280px;
+        width: 750px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      p-c {
+        padding-left: 40px;
+      }
+    </style>
+
+  </head>
+  <body class="d-flex h-100 text-center text-dark bg-light">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="'scroll">
+    <main class="px-3 text-center">
+      <h1><b>ФиКЛ корпус</b></h1>
+      <p class="lead"><sup>Фильмов и Кино Лингвистический корпус</sup></p>
+      <p class="lead">Корпус Вашей мечты, содержащий в себе данные из статей о фильмах!</p>
+      <form class="lead" action="/process">
+        <input type="text" class="form-control" placeholder="Введите запрос" id="userForm" name="Enter" required>
+        <br>
+        <input class="submit" type="submit" name="submit" value="Сохранить ответ">
+        <br>
+        <br>
+      </form>
+      <div class="container-info">
+        <h3>Справка: возможные функции запроса</h3>
+        <p-c class="lead"> 1) Поиск по лемме: введите слово </p>
+        <p-c class="lead"> 2) Поиск по словоформе: введите слово в кавычках "X"</p>
+        <p-c class="lead"> 3) Поиск по тегу: введите тег в формате UPOS</p>
+        <p-c class="lead"> 4) Поиск по лемме с определенным тегом: введите слово и тег в формате X+tag</p>
+        <p-c class="lead"> 5) Поиск биграмм и триграмм: введите каждую единицу через пробел</p>
+      </div>
+    </main>
+
+    <div class="container overflow-hidden">
+      <div class="row g-0">
+        <div class="col-6">
+          <div class="p-3 bg-light">
+            <img src="static/img/cute_cat.jpg" width="40" height="40" alt="Милена Камская">
+            <p>Камская Милена, БКЛ-211</p>
+            <p>В основном занималась тем-то тем-то</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 bg-light">
+            <img src="static/img/cute_cat.jpg" width="40" height="40" alt="Мария Криволап">
+            <p>Мария Криволап, БКЛ-212</p>
+            <p>В основном занималась тем-то тем-то</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 bg-light">
+            <img src="static/img/cute_cat.jpg" width="40" height="40" alt="Анастасия Фирсова">
+            <p>Анастасия Фирсова, БКЛ-212</p>
+            <p>В основном занималась тем-то тем-то</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 bg-light">
+            <img src="static/img/cute_cat.jpg" width="40" height="40" alt="Стефания Харская">
+            <p>Стефания Харская, БКЛ-212</p>
+            <p>В основном занималась тем-то тем-то</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-auto text-black-50">
+    <div class="text-center p-3" style="background-color: #ACE7FE; color:#46092E;">
+      <p>НИУ ВШЭ, 2023 год</p>
+    </div>
+  </footer>
+
+  </div>
+  </body>
+
+</html>

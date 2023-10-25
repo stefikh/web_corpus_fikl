@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }  
+      th,
+      td {
+        border: #ccc 1px solid;
+        padding: 5px 10px;
+      }
+      .scroll {
+        height: 200px;
+        overflow-y: scroll;
+      }
+    </style> 
+  </head>
+  <body class="d-flex h-100 text-dark bg-light">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main class="px-3 text-center">
+      <h1><b>ФиКЛ корпус</b></h1>
+      <p class="lead"><sup>Фильмов и Кино Лингвистический корпус</sup></p>
+    </main>
+  <div class="container-fluid">
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <h2>{{ input_line }}</h2>
+      <br>
+      <br>
+      <h2>По вашему запросу обнаружено:</h2>
+      {% if check == 1 %}
+        <div class="table-responsive small">
+          <table class="table table-striped table-sm" align="center">
+            <thead>
+              <tr>
+                <th scope="col">Предложение</th>
+                <th scope="col">Метаданные</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for i in range(0, results|length, 2) %}
+                    <tr>
+                        <td>{{ results[i] }}</td>
+                        <td>{{ results[i+1] }}</td>
+                    </tr>
+                {% endfor %}
+              </tbody>
+          </table>
+        </div>
+      {% else %}
+        <p>Некорректный ввод. Наш и Ваш - максимум это 3 единицы в строке! Тем более, мы не обрабатываем числа!</p>
+      {% endif %}
+    </main>
+  </div>
+  <footer class="mt-auto text-black-50">
+    <div class="text-center p-3" style="background-color: #ACE7FE; color:#46092E;">
+      <p>НИУ ВШЭ, 2023 год</p>
+    </div>
+  </footer>
+  </body>
+</div>
+</html>
